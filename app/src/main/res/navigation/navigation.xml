@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/dash">
+
+    <fragment
+        android:id="@+id/dash"
+        android:name="com.example.regalum.Dash"
+        android:label="fragment_dash"
+        tools:layout="@layout/fragment_dash" >
+        <action
+            android:id="@+id/action_dash_to_estudiante"
+            app:destination="@id/estudiante" />
+        <action
+            android:id="@+id/action_dash_to_materia"
+            app:destination="@id/materia" />
+        <action
+            android:id="@+id/action_dash_to_bit"
+            app:destination="@id/bit" />
+        <action
+            android:id="@+id/action_dash_to_ccomputo"
+            app:destination="@id/ccomputo" />
+    </fragment>
+    <fragment
+        android:id="@+id/bit"
+        android:name="com.example.regalum.Bit"
+        android:label="fragment_bit"
+        tools:layout="@layout/fragment_bit" />
+    <fragment
+        android:id="@+id/estudiante"
+        android:name="com.example.regalum.Estudiante"
+        android:label="fragment_estudiante"
+        tools:layout="@layout/fragment_estudiante" />
+    <fragment
+        android:id="@+id/materia"
+        android:name="com.example.regalum.Materia"
+        android:label="fragment_profesor"
+        tools:layout="@layout/fragment_materia" />
+    <fragment
+        android:id="@+id/ccomputo"
+        android:name="com.example.regalum.Ccomputo"
+        android:label="fragment_ccomputo"
+        tools:layout="@layout/fragment_ccomputo" />
+</navigation>
